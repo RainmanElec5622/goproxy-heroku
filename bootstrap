@@ -4,4 +4,4 @@ echo "#####################"
 ls -al
 echo "#####################"
 cd /app
-./proxy bridge -p :33080 -t tcp 
+./proxy bridge -p :$PORT -t tcp 
