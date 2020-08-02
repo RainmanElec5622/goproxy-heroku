@@ -4,4 +4,5 @@ echo "#####################"
 ls -al
 echo "#####################"
 cd /app
-./proxy bridge -p :$PORT -t tcp 
+./proxy bridge -p :33000 -t tcp &
+./proxy server -r ":$PORT@127.0.0.1:90" -P "127.0.0.1:33000" -T tcp 
